@@ -1,14 +1,13 @@
 import webpack from 'webpack'
 import path from 'path'
 
-const name = 'ApiAuth'
+const name = 'ApiAuthDynamicValue'
 
 const production = process.env.NODE_ENV === 'production'
 
 const config = {
     target: 'web',
     entry: [
-        'immutable',
         './src/ApiAuthDynamicValue.js'
     ],
     output: {
